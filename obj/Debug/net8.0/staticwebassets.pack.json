@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\Logo_tab.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\_redirects",
-      "PackagePath": "staticwebassets"
-    },
-    {
       "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\contact\\Loading-icon-unscreen.gif",
       "PackagePath": "staticwebassets\\contact\\Loading-icon-unscreen.gif"
     },
@@ -305,8 +301,8 @@
       "PackagePath": "staticwebassets\\profile\\Picture.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\Picture_1.JPG",
-      "PackagePath": "staticwebassets\\profile\\Picture_1.JPG"
+      "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\Picture_1_face.jpg",
+      "PackagePath": "staticwebassets\\profile\\Picture_1_face.jpg"
     },
     {
       "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\curriculum.png",

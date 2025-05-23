@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2EO2Rc9iFlEBd2TYpd5Jxuvojm7xKxxNUr2zY7Pyo8o=",
+  "Hash": "7ELODFcjRQoNKCPpsf3nI+MPQd+D04JAZeFAdIYYNl0=",
   "Source": "MyWebsite",
   "BasePath": "_content/MyWebsite",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\_redirects",
-      "SourceId": "MyWebsite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\",
-      "BasePath": "_content/MyWebsite",
-      "RelativePath": "_redirects",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\_redirects"
-    },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\contact\\email.png",
       "SourceId": "MyWebsite",
@@ -1461,12 +1442,12 @@
       "OriginalItemSpec": "wwwroot\\profile\\CV_Português.pdf"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\Picture_1.JPG",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\Picture_1_face.jpg",
       "SourceId": "MyWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\",
       "BasePath": "_content/MyWebsite",
-      "RelativePath": "profile/Picture_1.JPG",
+      "RelativePath": "profile/Picture_1_face.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,7 +1458,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\profile\\Picture_1.JPG"
+      "OriginalItemSpec": "wwwroot\\profile\\Picture_1_face.jpg"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\Picture.jpg",
