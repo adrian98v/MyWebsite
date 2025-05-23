@@ -1,0 +1,740 @@
+﻿@{
+    Layout = "~/Views/Shared/Header.cshtml";
+
+    string selectedLanguage = Context.Request.Cookies["lang"] ?? "en";
+}
+
+<link rel="stylesheet" href="~/css/index.css" />
+
+
+
+
+<section class="img_text_container">
+
+
+
+
+    <div class="p_container">
+        @switch (selectedLanguage)
+        {
+            case "en":
+                <p class="p_en"></p>
+                <h2>Software Developer</h2>
+                <script>
+                    window.addEventListener("DOMContentLoaded", function () {
+                        const text = "Hello, I am Adrian Veppo.";
+                        const typedText = document.querySelector(".p_en");
+                        let index = 0;
+
+                        const typeWriter = setInterval(() => {
+
+                            if (typedText.textContent.endsWith("|")) {
+
+                                typedText.textContent = typedText.textContent.slice(0, -1);
+                            }
+
+
+                            if (text.length === index) {
+
+                                clearInterval(typeWriter)
+
+
+                            } else {
+                                typedText.textContent += text[index];
+
+                                typedText.textContent += "|";
+
+                                index++;
+                            }
+
+                        }, 50);
+
+                    });
+                </script>
+
+
+
+                break;
+            case "es":
+                <p class="p_es"></p>
+                
+                <h2>Desarrollador de Software</h2>
+                <script>
+                    window.addEventListener("DOMContentLoaded", function () {
+                        const text = "Hola, mi nombre es Adrián Veppo.";
+                        const typedText = document.querySelector(".p_es");
+                        let index = 0;
+
+                        const typeWriter = setInterval(() => {
+
+                            if (typedText.textContent.endsWith("|")){
+
+                                typedText.textContent = typedText.textContent.slice(0, -1);
+                            }
+
+
+                            if (text.length === index) {
+
+                                clearInterval(typeWriter)
+                                
+
+                            } else {
+                                typedText.textContent += text[index];
+
+                                typedText.textContent += "|";
+
+                                index++;
+                            }
+
+                            
+
+
+                        }, 50);
+
+
+                        
+                    });
+                </script>
+                break;
+            case "pt":
+                <p class="p_pt"></p>
+                <h2>Desenvolvedor de Software</h2>
+                <script>
+                    window.addEventListener("DOMContentLoaded", function () {
+                        const text = "Olá, o meu nome é Adrian Veppo.";
+                        const typedText = document.querySelector(".p_pt");
+                        let index = 0;
+
+                        const typeWriter = setInterval(() => {
+
+                            if (typedText.textContent.endsWith("|")) {
+
+                                typedText.textContent = typedText.textContent.slice(0, -1);
+                            }
+
+
+
+                            if (text.length === index) {
+                                clearInterval(typeWriter)
+
+                            } else {
+                                typedText.textContent += text[index];
+
+                                typedText.textContent += "|";
+
+                                index++;
+                            }
+
+
+                        }, 50);
+                    });
+                </script>
+                
+                break;
+        }
+
+
+        <div class="cv_git_container">
+
+            <script>
+                setTimeout(() => {
+                    document.querySelector(".download_cv").classList.add("visible")
+                    document.querySelector(".label").classList.add("visible")
+
+                
+                }, 1200)
+            </script>
+
+
+             @switch (selectedLanguage)
+        {
+            case "en":
+                <a class="download_cv" href="./profile/CV_English.pdf" target="_blank">
+
+                    <div>Resume</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+            case "es":
+                <a class="download_cv" href="./profile/CV_Español.pdf" target="_blank">
+
+                    <div>Curriculum</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+            case "pt":
+                <a class="download_cv" href="./profile/CV_Português.pdf" target="_blank">
+
+                    <div>Currículo</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+        }
+           
+
+        </div>
+
+
+        @switch (selectedLanguage)
+        {
+            case "en":
+                <label class="label">The language of the resume changes depending on the language selected here.</label>
+                break;
+            case "es":
+                <label class="label">El idioma del curriculum cambia en base al idioma seleccionado aquí.</label>
+                break;
+            case "pt":
+                <label class="label">O idioma do currículo muda com base no idioma selecionado aqui</label>
+                break;
+        }
+
+        
+    </div>
+
+
+
+    <div class="img_container">
+        <img src="./profile/Picture_1.jpg" />
+    </div>
+
+    <div class="cv_git_container_responsive">
+
+        <script>
+            setTimeout(() => {
+                document.querySelector(".download_cv_responsive").classList.add("visible")
+            }, 1200)
+        </script>
+
+
+        
+
+        @switch (selectedLanguage)
+        {
+            case "en":
+                <a class="download_cv_responsive" href="./profile/CV_English.pdf" target="_blank">
+
+                    <div>Resume</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+            case "es":
+                <a class="download_cv_responsive" href="./profile/CV_Español.pdf" target="_blank">
+
+                    <div>Curriculum</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+            case "pt":
+                <a class="download_cv_responsive" href="./profile/CV_Português.pdf" target="_blank">
+
+                    <div>Currículo</div>
+
+                    <img src="./profile/curriculum.png" />
+                </a>
+                break;
+        }
+
+        
+    </div>
+
+
+    <script>
+        setTimeout(() => {
+            document.querySelector(".label_responsive").classList.add("visible")
+
+        }, 1200)
+    </script>
+
+
+    @switch (selectedLanguage)
+    {
+        case "en":
+            <label class="label_responsive">The language of the resume changes<br />depending on the language selected here.</label>
+            break;
+        case "es":
+            <label class="label_responsive">El idioma del curriculum cambia<br />en base al idioma seleccionado aquí.</label>
+            break;
+        case "pt":
+            <label class="label_responsive">O idioma do currículo muda<br />com base no idioma selecionado aqui</label>
+            break;
+    }
+
+</section>
+
+
+
+
+<section id="projects" class="project_section">
+
+    @switch (selectedLanguage)
+    {
+        case "en":
+            <h2 class="proyects_h2">Projects</h2>
+        break;
+        case "es":
+            <h2 class="proyects_h2">Proyectos</h2>
+            break;
+        case "pt":
+            <h2 class="proyects_h2">Projetos</h2>
+            break;
+    }
+
+    
+
+    <div class="project_grid_container">
+
+        @switch (selectedLanguage)
+        {
+            case "es":
+
+                <div class="grid_element element_1">
+                    <img src="./proyects/Photo_1.jpg" />
+
+                    <div class="element_text_container">
+
+                        <h3 class="element_text_container_h3">Sitio web para panaderia artesanal</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://fuerzanatural.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/FrontendFuerzaNatural" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid_element element_2">
+                    <img src="./proyects/Photo_2.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Sitio web para psicóloga</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://evelinveppo.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Psicologia" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_element element_3">
+                    <img src="./proyects/Photo_3.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Tarjeta de invitación de casamiento</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://nuestrainvitacion.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Wedding" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="grid_element element_4">
+
+                    <img src="./proyects/Photo_4.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Clon básico de Amazon</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://thriving-figolla-1cef44.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Amazon_Clone" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            
+            break;
+
+            case "en":
+
+                <div class="grid_element element_1">
+                    <img src="./proyects/Photo_1.jpg" />
+
+                    <div class="element_text_container">
+
+                        <h3 class="element_text_container_h3">Artisan bakery website</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://fuerzanatural.netlify.app/" class="element_text_btn_container">
+                                Visit
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/FrontendFuerzaNatural" class="element_text_btn_container_2">
+                                Code
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid_element element_2">
+                    <img src="./proyects/Photo_2.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Website for psychologist</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://evelinveppo.netlify.app/" class="element_text_btn_container">
+                                Visit
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Psicologia" class="element_text_btn_container_2">
+                                Code
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_element element_3">
+                    <img src="./proyects/Photo_3.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Wedding invitation card</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://nuestrainvitacion.netlify.app/" class="element_text_btn_container">
+                                Visit
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Wedding" class="element_text_btn_container_2">
+                                Code
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="grid_element element_4">
+
+                    <img src="./proyects/Photo_4.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Basic Amazon clone</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://thriving-figolla-1cef44.netlify.app/" class="element_text_btn_container">
+                                Visit
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Amazon_Clone" class="element_text_btn_container_2">
+                                Code
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                break;
+            case "pt":
+
+                <div class="grid_element element_1">
+                    <img src="./proyects/Photo_1.jpg" />
+
+                    <div class="element_text_container">
+
+                        <h3 class="element_text_container_h3">Site para padaria artesanal</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://fuerzanatural.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/FrontendFuerzaNatural" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="grid_element element_2">
+                    <img src="./proyects/Photo_2.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Site para psicóloga</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://evelinveppo.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Psicologia" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_element element_3">
+                    <img src="./proyects/Photo_3.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Convite de casamento</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://nuestrainvitacion.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Wedding" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="grid_element element_4">
+
+                    <img src="./proyects/Photo_4.jpg" />
+
+                    <div class="element_text_container">
+                        <h3 class="element_text_container_h3">Clone básico da Amazon</h3>
+
+                        <div class="buttons_container">
+                            <a target="_blank" href="https://thriving-figolla-1cef44.netlify.app/" class="element_text_btn_container">
+                                Visitar
+                                <img src="./proyects/out.png" />
+                            </a>
+
+                            <a target="_blank" href="https://github.com/adrian98v/Amazon_Clone" class="element_text_btn_container_2">
+                                Código
+                                <img src="./proyects/github.png" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                break;
+        }
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="contact_container">
+
+
+    <div class="contact_text">
+
+        @switch (selectedLanguage)
+        {
+            case "en":
+                <h3>GET IN TOUCH </h3>
+                <p>Send me an email</p>
+                break;
+            case "es":
+                <h3>PONTE EN CONTACTO </h3>
+                <p>Mandame un email</p>
+                break;
+            case "pt":
+                <h3>ENTRA EM CONTACTO</h3>
+                <p>Envia-me um email</p>
+                break;
+        }
+
+        
+        <p class="email_p"> <img src="./contact/email.png" /> veppoadrian98@gmail.com</p>
+        <p class="movil_p"> <img src="./contact/movil.png" /> +54 9 3625293546</p>
+        <a href="https://github.com/adrian98v" target="_blank"><img class="github_logo" src="./proyects/github.png" /></a>
+    </div>
+
+
+
+
+    <form class="contact_form" method="post">
+
+        @switch (selectedLanguage)
+        {
+            case "en":
+                {
+                    <input type="text" placeholder="Name" name="nombre" required />
+                    <input type="email" placeholder="Email" name="email" required />
+                    <textarea placeholder="Message" name="message" required></textarea>
+                    <button class="form_button">Send</button>
+                }
+                break;
+            case "es":
+                {
+                    <input type="text" placeholder="Nombre" name="nombre" required />
+                    <input type="email" placeholder="Email" name="email" required />
+                    <textarea placeholder="Mensaje" name="message" required></textarea>
+                    <button class="form_button">Enviar</button>
+                }
+                break;
+            case "pt":
+                {
+                    <input type="text" placeholder="Nome" name="nombre" required />
+                    <input type="email" placeholder="Email" name="email" required />
+                    <textarea placeholder="Mensagem" name="message" required></textarea>
+                    <button class="form_button">Enviar</button>
+                }
+                break;
+        }
+
+        
+        
+        <div class="form_button_loading">
+            <div class="circle_loading"></div>
+        </div>
+    </form>
+
+
+    <div class="email_sent_popup_container">
+        <div class="email_sent_popup">
+
+
+            @switch (selectedLanguage)
+            {
+                case "en":
+                    <div class="popup_button_container">
+                        <button class="popup_button">X</button>
+                    </div>
+                    <h3>Message sent</h3>
+
+                    <p>I will reply as soon as possible</p>
+                    <p>Thank you!</p>
+                    break;
+                case "es":
+                    <div class="popup_button_container">
+                        <button class="popup_button">X</button>
+                    </div>
+                    <h3>Has enviado tu mensaje</h3>
+
+                    <p>Te responderé lo más pronto posible</p>
+                    <p>¡Gracias!</p>
+                    break;
+                case "pt":
+                    <div class="popup_button_container">
+                        <button class="popup_button">X</button>
+                    </div>
+                    <h3>Enviaste a tua mensagem</h3>
+
+                    <p>Responderei o mais breve possível</p>
+                    <p>Obrigado!</p>
+                    
+                    break;
+            }
+            
+        </div>
+
+
+    </div>
+
+
+    <script>
+        const form = document.querySelector(".contact_form");
+        const popupContainer = document.querySelector(".email_sent_popup_container");
+        const popupCloseBtn = document.querySelector(".popup_button");
+        const buttonForm = document.querySelector(".form_button")
+        const loading = document.querySelector(".form_button_loading")
+        
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const formData = {
+                Name: e.target.nombre.value,
+                Email: e.target.email.value,
+                Message: e.target.message.value
+            }
+
+            buttonForm.style.display = "none";
+            loading.style.display = "flex";
+
+            fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            })
+            .then(res => {
+                    if (res.ok) {
+                        
+                        popupContainer.classList.add("active");
+                        loading.style.display = "none";
+                        buttonForm.style.display = "block";
+
+                        form.reset();
+                    } else {
+                        
+                        alert("Hubo un error al enviar el mensaje.");
+                    }
+                })
+            .catch(error => {
+                    console.log(error);
+                    alert("Error en la conexión.");
+            });
+        });
+
+        popupCloseBtn.addEventListener("click", () => {
+            popupContainer.classList.remove("active");
+  
+        });
+
+    </script>
+    
+</section>
+
+

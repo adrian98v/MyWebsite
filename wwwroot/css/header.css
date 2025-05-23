@@ -1,0 +1,253 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(13, 13, 13);
+    margin: 0px;
+    
+}
+
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    align-items: center;
+    background-color: rgb(1, 2, 23, 0.8);
+    width: 100dvw;
+    border-bottom: 3px solid rgb(5, 4, 118);
+    position: fixed;
+    z-index:5;
+    backdrop-filter: blur(10px)
+}
+
+.header_container h2 { 
+    margin-left: 50px;
+    width: 100%;
+    color: white;
+    opacity: .9;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.logo{
+    width: 80px;
+    filter: invert(.9);
+    margin-left: 35px;
+}
+
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+    margin-right: 70px;
+    height:30px;
+}
+
+
+.header_nav a {
+    text-decoration: none;
+    color: white;
+    opacity: .85;
+    font-family: sans-serif;
+    
+ }
+
+.flag_img {
+    width: 20px;
+}
+
+.btn_lang{
+    background-color: rgb(0, 0, 0, 0.00);
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 50%;
+    background-color: white;
+    height: 20px;
+}
+
+.dropdown-language a{
+    height: 100%;
+    align-content:center;
+    padding: 4px 8px;
+}
+
+.dropdown-language a:hover{
+    background-color: rgb(55, 55, 55);
+}
+
+.dropdown-language {
+    position: absolute;
+    top: 11vh;
+    right: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 13px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.2s ease;
+    background-color: rgb(33, 34, 38);
+    border: 1px solid rgb(5, 4, 118);
+    
+}
+
+.dropdown-language.visible{
+    height: 90px;
+    right: 42px;
+    border: 2px solid rgb(5, 4, 118, 0.7);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.dropdown-language-responsive {
+    display: none;
+}
+
+.dropdown_button {
+    background-color: rgb(55, 55, 55, 0.00);
+    color: cornflowerblue;
+    font-size: 1.8em;
+    border: none;
+    height: 40px;
+    display: none;
+}
+
+.btn_lang_responsive{
+    display:none;
+}
+
+@media (max-width:550px) {
+    .header_nav{
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 11.5vh;
+        right: 0px;
+        height: 90vh;
+        width: 0px;
+        background-color: rgb(1, 2, 23, 0.97);
+        gap: 30px;
+        backdrop-filter: blur(10px);
+        transition: width 0.5s ease;
+        padding-top: 20px;
+        border-left: 2px solid rgb(1, 2, 23, 0.98);
+    }
+
+
+
+    .dropdown-menu.active {
+        width: 180px;
+    }
+
+    .dropdown_button {
+        display: block;
+        margin-right: 60px;
+    }
+
+    .dropdown_flag_img {
+        width: 20px;
+      
+    }
+
+    .dropdown_btn_lang {
+        display: block;
+        background-color: rgb(0, 0, 0, 0.00);
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        border-radius: 50%;
+        background-color: white;
+        height: 20px;
+        width: 20px;
+        margin: 0 auto;
+
+        
+    }
+
+    .dropdown-menu a {
+        text-decoration: none;
+        color: white;
+        opacity: .85;
+        font-family: sans-serif;
+        height: 40px;
+        align-content: center;
+        padding-left: 20px;
+        border-left: 5px solid rgb(78, 85, 232);
+    }
+
+
+    .dropdown-language-responsive {
+        position: absolute;
+        top: 11vh;
+        right: 41vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 13px;
+        overflow: hidden;
+        height: 0px;
+        transition: height 0.2s ease;
+        background-color: rgb(33, 34, 38);
+        border: 1px solid rgb(5, 4, 118);
+    }
+
+
+    .dropdown-language-responsive.visible {
+        height: 90px;
+        
+        border: 2px solid rgb(5, 4, 118, 0.7);
+    }
+
+    .btn_lang_responsive {
+        display: inline-block;
+        background-color: rgb(0, 0, 0, 0.00);
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        border-radius: 50%;
+        background-color: white;
+        height: 20px;
+    }
+
+    .flag_img_responsive {
+        width: 20px;
+    }
+
+    .responsive_lang_options{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .responsive_lang_options label{
+        color: white;
+        opacity: .85;
+        font-family: sans-serif;
+        margin: 20px 0px 10px 0px;
+        border-left: 5px solid rgb(78, 85, 232);
+        padding-left: 20px;
+        height: 40px;
+        align-content: center;
+
+    }
+
+    .responsive_lang_options a{
+        font-size: 0.7em;
+        border-left: 0px solid rgb(78, 85, 232);
+        padding-left: 25px;
+        height: 35px;
+    }
+
+
+}
