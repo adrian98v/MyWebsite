@@ -26,3 +26,8 @@ C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\ref
 C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\MyWebsite.pdb
 C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\MyWebsite.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\ref\MyWebsite.dll
+C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\bin\Debug\net8.0\Sprache.dll
+C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\MyWebsite.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\MyWebsite.sourcelink.json
+C:\Users\Usuario\Desktop\Proyectos\.NET\MyWebsite\MyWebsite\obj\Debug\net8.0\MyWebsite.csproj.Up2Date

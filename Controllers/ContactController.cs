@@ -29,8 +29,8 @@ namespace MyWebsite.Controllers
                 var fromEmail = _config["EmailSettings:SenderEmail"];
                 var myEmail = _config["EmailSettings:MyEmail"];
          
-                var apiKey = _config["EmailSettings:MailjetApiKey"];
-                var apiSecret = _config["EmailSettings:MailjetApiSecret"];
+                var apiKey = _config["MailjetApiKey"];
+                var apiSecret = _config["MailjetApiSecret"];
 
 
                 var mensaje = new MailMessage();

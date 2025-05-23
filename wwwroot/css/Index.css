@@ -420,7 +420,7 @@
 
 .email_sent_popup {
     margin: 0 auto;
-    width: 50vw;
+    width: 70vw;
     max-width: 450px;
     height: 200px;
     background-color: aliceblue;
@@ -441,13 +441,13 @@
 }
 
 .email_sent_popup h3{
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 30px;
 }
 
 .email_sent_popup p{
     margin: 10px 0px;
-   font-size: 18px;
+   font-size: 16px;
 }
 
 
