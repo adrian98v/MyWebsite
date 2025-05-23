@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Logo_tab.jpg"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\_redirects",
+      "PackagePath": "staticwebassets"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\contact\\Loading-icon-unscreen.gif",
       "PackagePath": "staticwebassets\\contact\\Loading-icon-unscreen.gif"
     },
