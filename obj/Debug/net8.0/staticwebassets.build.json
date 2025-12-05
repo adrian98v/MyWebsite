@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7ELODFcjRQoNKCPpsf3nI+MPQd+D04JAZeFAdIYYNl0=",
+  "Hash": "4j50R9PI+ux87IPCrjmXhKZheIUqpcUG56J6lDcWifU=",
   "Source": "MyWebsite",
   "BasePath": "_content/MyWebsite",
   "Mode": "Default",
@@ -1385,12 +1385,12 @@
       "OriginalItemSpec": "wwwroot\\profile\\CV FOTO.png"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\CV_English.pdf",
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\CV_English_1.pdf",
       "SourceId": "MyWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\",
       "BasePath": "_content/MyWebsite",
-      "RelativePath": "profile/CV_English.pdf",
+      "RelativePath": "profile/CV_English_1.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1401,7 +1401,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\profile\\CV_English.pdf"
+      "OriginalItemSpec": "wwwroot\\profile\\CV_English_1.pdf"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Proyectos\\.NET\\MyWebsite\\MyWebsite\\wwwroot\\profile\\CV_Español.pdf",
